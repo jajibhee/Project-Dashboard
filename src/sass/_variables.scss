@@ -1,0 +1,10 @@
+$colors: (
+  main: #2a64f0,
+  text: #d3d2d3,
+  heading: #000,
+  background: #fff
+);
+
+@function colors($colorName) {
+  @return map-get($map: $colors, $key: $colorName);
+}
