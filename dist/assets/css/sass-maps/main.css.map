@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,KACE,qBACA,YACA,aACA,YACA,UAAW,CACZ","file":"../main.css","sourcesContent":["main {\n  background-color: red;\n  margin: 1rem;\n  padding: 1rem;\n  height: 2rem;\n  width: 2rem;\n}\n"]}

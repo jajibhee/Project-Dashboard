@@ -1,0 +1,9 @@
+mixin sideIconItems(img, title)
+  .aside-menu
+    img(src=`assets/img/icons/${img}` alt=`${title}`)
+
+mixin navMenu(title, num)
+  .nav_menu-items
+    p= title
+    p= num
+  

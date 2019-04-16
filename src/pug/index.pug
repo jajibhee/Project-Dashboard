@@ -1,3 +1,5 @@
+include ./_mixins.pug
+
 html(lang="en")
   head
     meta(charset="UTF-8")
@@ -10,4 +12,32 @@ html(lang="en")
       aside
         .logo
           img(src="assets/img/logos/bhee.png", alt="")
-        .aside-menu
+        +sideIconItems("home.svg","home")
+        +sideIconItems("squares.svg","home")
+        +sideIconItems("date.svg","home")
+        +sideIconItems("chat.svg","home")
+        +sideIconItems("countdown.svg","home")
+        +sideIconItems("account.svg","home")
+        +sideIconItems("settings.svg","home")
+        .expand-menu
+          img(src="assets/img/icons/more.svg", alt="")
+      .menu
+        .nav
+          .nav_title
+            p Projects
+          .nav-list
+            +navMenu("all", 87)
+            +navMenu("current", 6)
+            +navMenu("pending", 2)
+            +navMenu("completed", 79)
+            +navMenu("failed",1)
+          .nav_icons
+            img(src="assets/img/icons/search.svg", alt="")
+            img(src="assets/img/icons/notification.svg", alt="")
+            img(src="assets/img/profiles/github.jpeg", alt="")
+        main
+          .display-list
+            .search-bar
+              input(type="text")
+            .sort
+              input(type="button", value="Progress")
